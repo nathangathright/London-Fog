@@ -21,15 +21,31 @@
 }
 
 .site-head-left a {
-
+  
   &:hover, 
   &:focus {
     outline: none;
     opacity: 1;
-    background-image: url('data:image/svg+xml;utf8,<svg stroke-width="8" stroke="%23fabe01" fill="none" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"><line x1="14px" y1="70%" x2="calc(100% - 14px)" y2="70%" /></svg>');
-    background-position: center bottom 3px;
-    background-repeat: no-repeat;
-    animation: bounceMenu .4s cubic-bezier(0,.5,.5,1) infinite alternate;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: auto;
+      right: 0.75em;
+      bottom: 12px;
+      left: 0.75em;
+      height: 0.5em;
+      border-radius: 999px;
+      background: var(--color-accent);
+      z-index: -1;
+      animation: bounceMenu .4s cubic-bezier(0,.5,.5,1) infinite alternate;
+
+      @media (max-width: 850px) {
+        left: 0.25em;
+        right: 0.25em;
+        bottom: 0.25em;
+      }
+    }
   }
 
   &:active {
@@ -65,11 +81,11 @@
 
 @keyframes bounceMenu {
   from {
-    background-position: center bottom 3px;
+    transform: translateY(0px);
   }
 
   to {
-    background-position: center bottom 5px;
+    transform: translateY(-2px);
   }
 }
 
