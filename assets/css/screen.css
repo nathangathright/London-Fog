@@ -22,7 +22,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/animations.css";
 @import "components/logo-video.css";
 @import "components/menu-links.css";
-
+@import "components/subscribe.css";
 
 /* Main - Theme styles
 /* ---------------------------------------------------------- */
