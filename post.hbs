@@ -41,11 +41,9 @@
     </footer>
 
     {{!-- Email subscribe form at the bottom of the page --}}
-    {{#if @labs.members }}
-        {{#unless @member}}
-            {{> subscribe-form}}
-        {{/unless}}
-    {{/if}}
+    {{#unless @member}}
+        {{> subscribe-form}}
+    {{/unless}}
 
     {{!--
     <section class="post-content-comments">
