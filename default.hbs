@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{@site.lang}}">
+<html lang="{{@site.locale}}">
 <head>
 
     {{!-- Document Settings --}}
@@ -116,6 +116,7 @@
             plugins: [new SwupHeadPlugin(), new SwupScriptsPlugin()],
         });
         document.addEventListener('swup:contentReplaced', event => {
+            window.scrollTo(0, 0);
             initInfiniteScroll(window, document);
             document.body.classList.remove('site-head-open');
         });
