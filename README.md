@@ -19,6 +19,8 @@ The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which
 $ yarn zip
 ```
 
+To pull in updates from the base London theme, [open a pull request](https://github.com/nathangathright/londonfog/compare/dev...TryGhost:master).
+
 # PostCSS Features Used
 
 - Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
