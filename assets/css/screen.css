@@ -634,9 +634,7 @@ body {
 .post-content-body blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-width: 0 0 0 1px;
-    border-style: solid;
-    border-color: var(--color-accent);
+    border-left: var(--color-accent) 3px solid;
 }
 
 .post-content-body blockquote p {
